@@ -23,7 +23,7 @@ colorBtn.addEventListener("click", function () {
   colorPalletes.innerHTML = "";
 });
 
-// theme convertor{
+// theme convertor
 
 document.querySelector(".dark").addEventListener("click", function () {
   let root = document.querySelector(":root");
