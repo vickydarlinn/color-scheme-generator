@@ -5,30 +5,74 @@
   box-sizing: border-box;
   font-family: "Akshar", sans-serif;
 }
+:root {
+  --dark: rgba(67, 65, 65, 0.85);
+  --light: rgba(228, 228, 228, 0.635);
+}
 body {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  background-color: var(--light);
+  /* align-items: center; */
 }
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 5px solid red;
+  /* border: 5px solid red; */
+}
+h1 {
+  color: var(--dark);
+  font-size: 40px;
 }
 .pickers {
   display: flex;
-  align-items: center;
-  border: 1px solid green;
+  /* align-items: center; */
+  justify-content: center;
+  /* border: 1px solid green; */
   padding: 5px 10px;
+  margin: 15px auto;
+}
+.btn {
+  background-color: var(--dark); /* Green */
+  border: 1px solid black;
+  border-radius: 15px;
+  color: var(--light);
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+select {
+  background-color: var(--light);
+  color: var(--dark);
+  width: 200px;
+  font-size: 16px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+input {
+  height: auto;
 }
 .color-palletes {
   display: flex;
+  flex-grow: 1;
+  /* border: 1px solid blue; */
+  width: 90vw;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .color-palletes div {
-  width: 50px;
-  height: 100px;
-  border: 1px solid black;
+  flex-grow: 1;
+  height: 60vh;
+  /* border: 1px solid black; */
+  position: relative;
+}
+.color-palletes div p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
