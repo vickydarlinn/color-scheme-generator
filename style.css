@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   /* border: 5px solid red; */
 }
 h1 {
@@ -44,6 +45,7 @@ h1 {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
+  cursor: pointer;
 }
 select {
   background-color: var(--light);
@@ -75,4 +77,21 @@ input {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.themechanger {
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  cursor: pointer;
+}
+.themechanger:hover {
+  transform: scale(2);
+  transition-duration: 1s;
+  /* transition-delay: 1s; */
+  /* transition-: ; */
 }

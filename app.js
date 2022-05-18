@@ -22,3 +22,11 @@ colorBtn.addEventListener("click", function () {
     });
   colorPalletes.innerHTML = "";
 });
+
+// theme convertor{
+
+document.querySelector(".themechanger").addEventListener("click", function () {
+  let root = document.querySelector(":root");
+  root.style.setProperty("--light", " rgba(67, 65, 65, 0.85)");
+  root.style.setProperty("--dark", "rgba(228, 228, 228, 0.635)");
+});
