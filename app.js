@@ -25,8 +25,17 @@ colorBtn.addEventListener("click", function () {
 
 // theme convertor{
 
-document.querySelector(".themechanger").addEventListener("click", function () {
+document.querySelector(".dark").addEventListener("click", function () {
   let root = document.querySelector(":root");
   root.style.setProperty("--light", " rgba(67, 65, 65, 0.85)");
   root.style.setProperty("--dark", "rgba(228, 228, 228, 0.635)");
+  document.querySelector(".dark").classList.add("hidden");
+  document.querySelector(".light").classList.remove("hidden");
+});
+document.querySelector(".light").addEventListener("click", function () {
+  let root = document.querySelector(":root");
+  root.style.setProperty("--light", "rgba(228, 228, 228, 0.635)");
+  root.style.setProperty("--dark", " rgba(67, 65, 65, 0.85)");
+  document.querySelector(".dark").classList.remove("hidden");
+  document.querySelector(".light").classList.add("hidden");
 });
